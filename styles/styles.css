@@ -1,0 +1,110 @@
+aside {
+  height: 100vh;
+  padding: 40px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-width: 280px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 280px;
+          flex: 0 0 280px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+aside a {
+  padding: 10px;
+  margin: 10px 0;
+  display: block;
+  border-radius: 10px;
+}
+
+aside a:hover, aside a.active {
+  background: #f6f6fb;
+}
+
+aside .user {
+  background-color: red;
+  height: 50px;
+  margin: -40px;
+  margin-top: auto;
+}
+
+main {
+  width: 80%;
+  padding: 40px;
+  margin-left: 280px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+  max-width: 50%;
+}
+
+.box {
+  min-width: 200px;
+  width: 97%;
+  margin-top: 15px;
+  vertical-align: middle;
+}
+
+.box .inner {
+  background-color: #fff;
+  border-radius: 11px;
+}
+
+.box--projecten .inner {
+  background-color: transparent;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  gap: 10px;
+}
+
+.project {
+  background-color: blueviolet;
+  border-radius: 10px;
+}
+
+.project--orange {
+  background-color: rgba(255, 163, 0, 0.1548);
+}
+
+/*Varia*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f6f6fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,35 @@
+aside {
+  height: 100vh;
+  padding: 40px;
+
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+
+  width: 280px;
+  display: flex;
+  min-width: 280px;
+
+  flex: 0 0 280px;
+  flex-direction: column;
+  transition: all 0.2s;
+
+  a {
+    padding: 10px;
+    margin: 10px 0;
+    display: block;
+
+    border-radius: 10px;
+    &:hover,
+    &.active {
+      background: $bgGray;
+    }
+    // &::before
+  }
+  .user {
+    background-color: red;
+    height: 50px;
+    margin: -40px;
+    margin-top: auto;
+  }
+}

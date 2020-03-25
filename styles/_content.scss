@@ -1,0 +1,14 @@
+main {
+  width: 80%;
+  padding: 40px;
+  margin-left: 280px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
