@@ -1,0 +1,43 @@
+@media only screen and (max-width: 1012px) {
+  aside {
+    width: 20%;
+    min-width: 134px;
+    padding: 2%;
+    .user {
+      margin: -13%;
+      margin-top: auto;
+    }
+  }
+  main {
+    width: 80%;
+    margin-left: 20%;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  aside {
+    width: 20%;
+    min-width: 134px;
+    padding: 2%;
+    .user {
+      margin: -13%;
+      margin-top: auto;
+    }
+  }
+  main {
+    .box {
+      width: 100%;
+    }
+    padding-right: 10px;
+  }
+}
+@media only screen and (max-width: 520px) {
+  aside {
+    display: none;
+  }
+  main {
+    width: 100%;
+    padding: 5%;
+    margin-left: 0;
+  }
+}

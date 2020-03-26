@@ -1,11 +1,84 @@
 .box {
-  min-width: 200px;
-  width: 97%;
+  min-width: 250px;
+  width: 95%;
   margin-top: 15px;
+  margin-bottom: 28px;
   vertical-align: middle;
   .inner {
     background-color: #fff;
     border-radius: 11px;
+    padding: 17px 29px;
+  }
+}
+
+.box--groei {
+  .groeiplan-link {
+    float: right;
+    font-size: calc(7px + 0.5vw);
+    line-height: 26px;
+    color: $headingsColor;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-gap: 10px;
+    p {
+      font-style: italic;
+    }
+  }
+}
+
+.box--inbox {
+  .message {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 15px 0;
+    border-bottom: 1px rgba(61, 76, 128, 0.08) solid;
+    &:last-child {
+      border-bottom: unset;
+    }
+    &-title {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 75%;
+    }
+    &-title a {
+      font-size: calc(12px + 0.3vw);
+    }
+    &-date {
+      margin-left: auto;
+      font-size: calc(9px + 0.3vw);
+      color: $colorLight;
+      &--soon {
+        padding: 4px 7px;
+        border-radius: 7px;
+      }
+      &--today {
+        color: #fff;
+        background: #ff6868;
+      }
+      &--morgen {
+        color: #fe0000;
+        background: rgba(255, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.box--agenda {
+  .time-range {
+    font-size: 14px;
+    color: $colorLight;
+    font-weight: 500;
+    > span {
+      margin-left: -13px;
+    }
+    &:not(:first-child) {
+      margin-top: 15px;
+    }
   }
 }
 
@@ -15,12 +88,62 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 10px;
+    padding: 0;
+    @mixin project($textColor, $bgColor) {
+      padding: 16px;
+      border-radius: 10px;
+      color: $textColor;
+      background: $bgColor;
+    }
+    .project {
+      display: grid;
+      row-gap: 15px;
+
+      &-name a .lnr {
+        font-size: calc(7px + 0.5vw);
+        font-weight: bold;
+        padding: 0px 0 0 16px;
+      }
+      &-team {
+        justify-self: end;
+        font-family: $barlow;
+        font-weight: 500;
+      }
+      &-feedback {
+        text-decoration: underline;
+        font-size: 14px;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: end;
+        color: $headingsColor !important;
+      }
+      &--google {
+        @include project($googleColor, $googleBg);
+        a {
+          color: $googleColor;
+        }
+      }
+      &--apple {
+        @include project($appleColor, $appleBg);
+        a,
+        .lnr-users {
+          color: $appleColor;
+        }
+      }
+      &--pipi {
+        @include project($pipiColor, $pipiBg);
+        a,
+        .lnr-users {
+          color: $pipiColor;
+        }
+      }
+      &--spotify {
+        @include project($spotifyColor, $spotifyBg);
+        a,
+        .lnr-users {
+          color: $spotifyColor;
+        }
+      }
+    }
   }
-}
-.project {
-  background-color: blueviolet;
-  border-radius: 10px;
-}
-.project--orange {
-  background-color: $bgOrange;
 }

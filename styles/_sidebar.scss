@@ -1,5 +1,5 @@
 aside {
-  height: 100vh;
+  height: 100%;
   padding: 40px;
 
   background-color: white;
@@ -10,13 +10,11 @@ aside {
   display: flex;
   min-width: 280px;
 
-  flex: 0 0 280px;
   flex-direction: column;
-  transition: all 0.2s;
 
   a {
     padding: 10px;
-    margin: 10px 0;
+    margin: 25px 0;
     display: block;
 
     border-radius: 10px;
@@ -24,12 +22,47 @@ aside {
     &.active {
       background: $bgGray;
     }
-    // &::before
   }
   .user {
-    background-color: red;
     height: 50px;
     margin: -40px;
     margin-top: auto;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      margin: 0 15px 0 10px;
+    }
+
+    a.usersettings {
+      margin-left: auto;
+      margin-right: 15px;
+      background: $bgGray;
+      > span {
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#search {
+  background: $bgGray;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 12px 0 20px;
+  input {
+    background: none;
+    border: none;
+    width: 81%;
+    outline: none;
+    &:focus {
+      border: none;
+    }
+  }
+  svg {
+    fill: #231f20;
+    float: right;
+    cursor: pointer;
   }
 }
