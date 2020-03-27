@@ -1,0 +1,61 @@
+/* thanks to https://codepen.io/anthonycandraw/pen/REqyaw 
+hamburger button */
+.menu-btn {
+  display: none;
+  background-color: $hamburgerBg;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  height: 56px;
+  right: 24px;
+  position: fixed;
+  z-index: 2;
+  top: 24px;
+  width: 56px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Creating the hamburger icon in CSS */
+  & li {
+    background-color: #ffffff;
+    bottom: 0;
+    height: 2px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 16px;
+    top: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* set the three lines of hamburger icon apart */
+  & li:first-child {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  & li:last-child {
+    transform: translate3d(0, 4px, 0);
+  }
+
+  /* toggle on with our Javascript function. */
+  &--on li:first-child {
+    transform: rotate(135deg) translate3d(0, 0, 0);
+  }
+
+  &--on li:last-child {
+    transform: rotate(-135deg) translate3d(0, 0, 0);
+  }
+
+  &--on li:nth-child(2) {
+    opacity: 0;
+  }
+}
+
+.menu--open {
+  transform: translate3d(0, 0, 0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+}

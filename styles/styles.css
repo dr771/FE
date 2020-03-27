@@ -437,51 +437,6 @@ main {
   width: 84%;
 }
 
-@media only screen and (max-width: 1012px) {
-  aside {
-    width: 20%;
-    min-width: 134px;
-    padding: 2%;
-  }
-  aside .user {
-    margin: -13%;
-    margin-top: auto;
-  }
-  main {
-    width: 80%;
-    margin-left: 20%;
-  }
-}
-
-@media only screen and (max-width: 660px) {
-  aside {
-    width: 20%;
-    min-width: 134px;
-    padding: 2%;
-  }
-  aside .user {
-    margin: -13%;
-    margin-top: auto;
-  }
-  main {
-    padding-right: 10px;
-  }
-  main .box {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 520px) {
-  aside {
-    display: none;
-  }
-  main {
-    width: 100%;
-    padding: 5%;
-    margin-left: 0;
-  }
-}
-
 /*Varia*/
 * {
   -webkit-box-sizing: border-box;
@@ -498,5 +453,125 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* thanks 
+Styles for the menu button */
+.menu-btn {
+  display: none;
+  background-color: #adadea;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  height: 56px;
+  left: 24px;
+  position: fixed;
+  z-index: 2;
+  top: 24px;
+  width: 56px;
+}
+
+/* Creating the hamburger icon in CSS */
+.menu-btn li {
+  background-color: #ffffff;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 16px;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* The following two lines set the three lines of our hamburger/hotdog icon apart */
+.menu-btn li:first-child {
+  -webkit-transform: translate3d(0, -4px, 0);
+          transform: translate3d(0, -4px, 0);
+}
+
+.menu-btn li:last-child {
+  -webkit-transform: translate3d(0, 4px, 0);
+          transform: translate3d(0, 4px, 0);
+}
+
+/* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
+.menu-btn--on li:first-child {
+  -webkit-transform: rotate(135deg) translate3d(0, 0, 0);
+          transform: rotate(135deg) translate3d(0, 0, 0);
+}
+
+.menu-btn--on li:last-child {
+  -webkit-transform: rotate(-135deg) translate3d(0, 0, 0);
+          transform: rotate(-135deg) translate3d(0, 0, 0);
+}
+
+.menu-btn--on li:nth-child(2) {
+  opacity: 0;
+}
+
+.menu--open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+@media only screen and (max-width: 1012px) {
+  aside {
+    /*width: 43%;
+    min-width: 134px;
+    padding: 2%;*/
+  }
+  aside .user {
+    margin: -13%;
+    margin-top: auto;
+  }
+  /*main {
+    width: 80%;
+    margin-left: 20%;
+  }*/
+}
+
+@media only screen and (max-width: 660px) {
+  .menu-btn {
+    display: block;
+  }
+  aside {
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    /* width: 20%;
+    min-width: 134px;
+    padding: 2%;
+    .user {
+      margin: -13%;
+      margin-top: auto;
+    }*/
+  }
+  main {
+    width: 100%;
+    margin-left: 0;
+  }
+  main .box {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  main {
+    width: 100%;
+    padding: 5%;
+    margin-left: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

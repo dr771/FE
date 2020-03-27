@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 minimum-scale=0.9"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+
+    <title>FE Assignment</title>
+  </head>
+  <body>
+    <nav class="menu-btn">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </nav>
+    <aside class="menu">
+        
+      <h2>Evaluatietool</h2>
+      <form id="search" role="search" action="https://dr770.com" method="get" class="" autocomplete="off">
+
+          <input name="search" type="text" placeholder="Zoeken" autocomplete="off" aria-label="Zoeken">
+          <svg aria-hidden="true" width="18" height="18"><path d="M18 16.5l-5.14-5.18h-.35a7 7 0 1 0-1.19 1.19v.35L16.5 18l1.5-1.5zM12 7A5 5 0 1 1 2 7a5 5 0 0 1 10 0z"></path></svg>
+
+</form>
+      <nav>
+        <a class="active" href=""
+          ><span class="lnr lnr-chart-bars"></span>Dashboard</a
+        >
+        <a href=""><span class="lnr lnr-users"></span>Team</a>
+        <a href=""><span class="lnr lnr-layers"></span>Projecten</a>
+        <a href=""><span class="lnr lnr-rocket"></span>Groeiplan</a>
+      </nav>
+      <div class="user"><img class="userpic"  src="https://i.imgur.com/yxRbNZZ.jpg"> <span class="username">Ilke</span><a class="usersettings" href=""><span class="lnr lnr-cog"></span></a></div>
+    </aside>
+    <main>
+      <h2>Dashboard</h2>
+      <div class="row">
+        <div class="column">
+          <div class="box box--inbox box--agenda">
+            <h3>To do</h3>
+            <div class="inner">
+              <div class="time-range">
+                <span>Deze week</span>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-calendar-full"></span> Jaarevaluatie invullen</span
+                ></a>
+                <span class="message-date message-date--soon message-date--today">Vandaag</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-rocket"></span> Groeiplan updaten</span
+                ></a>
+                <span class="message-date message-date--soon message-date--morgen" >Morgen</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-sync"></span> Peer antwoorden</span
+                ></a>
+                <span class="message-date ">Nog 3 dagen</span>
+              </div>
+            </div>
+            <div class="time-range">
+              <span>Deze maand</span>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-enter"></span> Feedback project
+                  aanvullen</span
+                ></a>
+                <span class="message-date">18 november 2019</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-rocket"></span> Groeiplan updaten</span
+                ></a>
+                <span class="message-date">15 november 2019</span>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="box box--inbox">
+            <h3>Inbox</h3>
+            <div class="inner">
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-enter"></span> Feedback project
+                  aanvullen</span
+                ></a>
+                <span class="message-date">18 november 2019</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-rocket"></span> Groeiplan updaten</span
+                ></a>
+                <span class="message-date">15 november 2019</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-calendar-full"></span> Peer evaluatie voor Bert Goossens ingevuld</span
+                ></a>
+                <span class="message-date">18 november 2019</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-sync"></span> Peer feedback van Bert Goossens</span
+                ></a>
+                <span class="message-date">18 november 2019</span>
+              </div>
+              <div class="message">
+                <span class="message-title"
+                  ><a href=""><span class="lnr lnr-sync"></span> Peer feedback van Cannick Grossard</span
+                ></a>
+                <span class="message-date">18 november 2019</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="box box--groei">
+            <h3>Mijn groei  <a class="groeiplan-link" href="">Bekijk groeiplan</a></h3>
+            <div class="inner">
+              <p>1. Meer efficiëntie bekomen</p>
+              <div class="progress efficience" title="44%">
+                <div class="progressBar"><div></div></div>
+              </div>
+              <p>2. UX principle gericht designen</p>
+              <div class="progress ux" title="84%">
+                <div class="progressBar"><div></div></div>
+              </div>
+            </div>
+          </div>
+          <div class="box box--projecten">
+            <h3>Mijn projecten</h3>
+            <div class="inner">
+              <div class="project project--google">
+                <div class="project-name">
+                  <a href=""
+                    >Google <span class="lnr lnr-chevron-right"></span
+                  ></a>
+                </div>
+                <div class="project-team">
+                  <span class="lnr lnr-users"></span>4
+                </div>
+                <a class="project-feedback" href="">Feedback toevoegen</a>
+              </div>
+              <div class="project project--apple">
+                <div class="project-name">
+                  <a href=""
+                    >Apple <span class="lnr lnr-chevron-right"></span
+                  ></a>
+                </div>
+                <div class="project-team">
+                  <span class="lnr lnr-users"></span>3
+                </div>
+                <a class="project-feedback" href="">Feedback toevoegen</a>
+              </div>
+              <div class="project project--pipi">
+                <div class="project-name">
+                  <a href=""
+                    >Pied Piper <span class="lnr lnr-chevron-right"></span
+                  ></a>
+                </div>
+                <div class="project-team">
+                  <span class="lnr lnr-users"></span>3
+                </div>
+                <a class="project-feedback" href="">Feedback toevoegen</a>
+              </div>
+              <div class="project project--spotify">
+                <div class="project-name">
+                  <a href=""
+                    >Spotify <span class="lnr lnr-chevron-right"></span
+                  ></a>
+                </div>
+                <div class="project-team">
+                  <span class="lnr lnr-users"></span>4
+                </div>
+                <a class="project-feedback" href="">Feedback toevoegen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
