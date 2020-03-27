@@ -1,4 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,500&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f6f6fb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
 h2 {
   font-family: "Barlow", sans-serif;
   font-style: normal;
@@ -507,81 +524,6 @@ hamburger button */
           box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
 }
 
-/*Varia*/
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: #f6f6fb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-
-/* thanks 
-Styles for the menu button 
-.menu-btn {
-  display: none;
-  background-color: $hamburgerBg;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  height: 56px;
-  right: 24px;
-  position: fixed;
-  z-index: 2;
-  top: 24px;
-  width: 56px;
-}
-
-/* Creating the hamburger icon in CSS 
-.menu-btn li {
-  background-color: #ffffff;
-  bottom: 0;
-  height: 2px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  width: 16px;
-  top: 0;
-  transition: all 0.3s ease-in-out;
-}
-
-/* The following two lines set the three lines of 
-our hamburger/hotdog icon apart
-.menu-btn li:first-child {
-  transform: translate3d(0, -4px, 0);
-}
-
-.menu-btn li:last-child {
-  transform: translate3d(0, 4px, 0);
-}
-
-/* We're now in the animation territory. 
-These are the classes you toggle on with our Javascript function. 
-.menu-btn--on li:first-child {
-  transform: rotate(135deg) translate3d(0, 0, 0);
-}
-
-.menu-btn--on li:last-child {
-  transform: rotate(-135deg) translate3d(0, 0, 0);
-}
-
-.menu-btn--on li:nth-child(2) {
-  opacity: 0;
-}
-
-.menu--open {
-  transform: translate3d(0, 0, 0);
-}*/
 @media only screen and (max-width: 1012px) {
   aside {
     /*width: 43%;

@@ -1,15 +1,4 @@
 @import "./colors";
-@import "./fonts";
-
-@import "./sidebar";
-@import "./content";
-@import "./boxes";
-
-@import "./icons";
-@import "./progress-bars";
-@import "./mob-nav";
-
-/*Varia*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,61 +11,14 @@ body {
   align-items: stretch;
 }
 
-/* thanks 
-Styles for the menu button 
-.menu-btn {
-  display: none;
-  background-color: $hamburgerBg;
-  border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-  height: 56px;
-  right: 24px;
-  position: fixed;
-  z-index: 2;
-  top: 24px;
-  width: 56px;
-}
+@import "./fonts";
 
-/* Creating the hamburger icon in CSS 
-.menu-btn li {
-  background-color: #ffffff;
-  bottom: 0;
-  height: 2px;
-  left: 0;
-  margin: auto;
-  position: absolute;
-  right: 0;
-  width: 16px;
-  top: 0;
-  transition: all 0.3s ease-in-out;
-}
+@import "./sidebar";
+@import "./content";
+@import "./boxes";
 
-/* The following two lines set the three lines of 
-our hamburger/hotdog icon apart
-.menu-btn li:first-child {
-  transform: translate3d(0, -4px, 0);
-}
+@import "./icons";
+@import "./progress-bars";
+@import "./mob-nav";
 
-.menu-btn li:last-child {
-  transform: translate3d(0, 4px, 0);
-}
-
-/* We're now in the animation territory. 
-These are the classes you toggle on with our Javascript function. 
-.menu-btn--on li:first-child {
-  transform: rotate(135deg) translate3d(0, 0, 0);
-}
-
-.menu-btn--on li:last-child {
-  transform: rotate(-135deg) translate3d(0, 0, 0);
-}
-
-.menu-btn--on li:nth-child(2) {
-  opacity: 0;
-}
-
-.menu--open {
-  transform: translate3d(0, 0, 0);
-}*/
 @import "./responsive";
