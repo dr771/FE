@@ -437,6 +437,76 @@ main {
   width: 84%;
 }
 
+/* thanks to https://codepen.io/anthonycandraw/pen/REqyaw 
+hamburger button */
+.menu-btn {
+  display: none;
+  background-color: #adadea;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+  height: 56px;
+  right: 24px;
+  position: fixed;
+  z-index: 2;
+  top: 24px;
+  width: 56px;
+  /* Creating the hamburger icon in CSS */
+  /* set the three lines of hamburger icon apart */
+  /* toggle on with our Javascript function. */
+}
+
+.menu-btn ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-btn li {
+  background-color: #ffffff;
+  bottom: 0;
+  height: 2px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 16px;
+  top: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-btn li:first-child {
+  -webkit-transform: translate3d(0, -4px, 0);
+          transform: translate3d(0, -4px, 0);
+}
+
+.menu-btn li:last-child {
+  -webkit-transform: translate3d(0, 4px, 0);
+          transform: translate3d(0, 4px, 0);
+}
+
+.menu-btn--on li:first-child {
+  -webkit-transform: rotate(135deg) translate3d(0, 0, 0);
+          transform: rotate(135deg) translate3d(0, 0, 0);
+}
+
+.menu-btn--on li:last-child {
+  -webkit-transform: rotate(-135deg) translate3d(0, 0, 0);
+          transform: rotate(-135deg) translate3d(0, 0, 0);
+}
+
+.menu-btn--on li:nth-child(2) {
+  opacity: 0;
+}
+
+.menu--open {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+}
+
 /*Varia*/
 * {
   -webkit-box-sizing: border-box;
@@ -455,29 +525,23 @@ body {
           align-items: stretch;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
 /* thanks 
-Styles for the menu button */
+Styles for the menu button 
 .menu-btn {
   display: none;
-  background-color: #adadea;
+  background-color: $hamburgerBg;
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
-          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
   cursor: pointer;
   height: 56px;
-  left: 24px;
+  right: 24px;
   position: fixed;
   z-index: 2;
   top: 24px;
   width: 56px;
 }
 
-/* Creating the hamburger icon in CSS */
+/* Creating the hamburger icon in CSS 
 .menu-btn li {
   background-color: #ffffff;
   bottom: 0;
@@ -488,30 +552,27 @@ Styles for the menu button */
   right: 0;
   width: 16px;
   top: 0;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
-/* The following two lines set the three lines of our hamburger/hotdog icon apart */
+/* The following two lines set the three lines of 
+our hamburger/hotdog icon apart
 .menu-btn li:first-child {
-  -webkit-transform: translate3d(0, -4px, 0);
-          transform: translate3d(0, -4px, 0);
+  transform: translate3d(0, -4px, 0);
 }
 
 .menu-btn li:last-child {
-  -webkit-transform: translate3d(0, 4px, 0);
-          transform: translate3d(0, 4px, 0);
+  transform: translate3d(0, 4px, 0);
 }
 
-/* We're now in the animation territory. These are the classes you toggle on with our Javascript function. */
+/* We're now in the animation territory. 
+These are the classes you toggle on with our Javascript function. 
 .menu-btn--on li:first-child {
-  -webkit-transform: rotate(135deg) translate3d(0, 0, 0);
-          transform: rotate(135deg) translate3d(0, 0, 0);
+  transform: rotate(135deg) translate3d(0, 0, 0);
 }
 
 .menu-btn--on li:last-child {
-  -webkit-transform: rotate(-135deg) translate3d(0, 0, 0);
-          transform: rotate(-135deg) translate3d(0, 0, 0);
+  transform: rotate(-135deg) translate3d(0, 0, 0);
 }
 
 .menu-btn--on li:nth-child(2) {
@@ -519,10 +580,8 @@ Styles for the menu button */
 }
 
 .menu--open {
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
+  transform: translate3d(0, 0, 0);
+}*/
 @media only screen and (max-width: 1012px) {
   aside {
     /*width: 43%;
